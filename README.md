@@ -13,4 +13,4 @@ A few dependencies are required to generate the documentation if you don't want 
 
 Assuming everything is on your `PATH`, to generate an all-encompassing _.html_ file:
 
-    asciidoctor -a data-uri -r asciidoctor-diagram docs/design.asciidoc
+    asciidoctor -a data-uri -r asciidoctor-diagram docs/skip_intro_feature.asciidoc
