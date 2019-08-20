@@ -9,6 +9,11 @@ Furthermore, TV shows that do have intros or outros do not follow the same conve
 
 == Video Intro and Outro Conventions
 
+Many TV shows begin their intro and outro credits at the same time in every episode, but many do not.
+Furthermore, many TV shows' intro and outro credits span the same amount of time throughout a season or series, but many do not.
+TV shows aside, there are other use cases that may need auto-skip timing to be customizable.
+Such a case may be a home video recorded decades ago on https://en.wikipedia.org/wiki/VHS[VHS] that has been digitized, but has poor quality content that is not worth watching or blank spans of time between the recordings.
+
 .Video Use Cases
 [plantuml,align="center"]
 ----
