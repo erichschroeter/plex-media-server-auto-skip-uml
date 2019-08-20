@@ -85,6 +85,12 @@ When the Plex Media Server starts to stream a video and support the _"auto-skip"
 . Does the current client want to auto-skip content at all?
 . Does the current client want to be prompted to auto-skip content?
 
+.Serving video stream
+[plantuml,align="center"]
+----
+include::serving_video_activity_diagram.puml[]
+----
+
 == Metadata
 
 In order for Plex Media Server to know when to skip in videos it needs data to tell it when to skip and how long to skip.

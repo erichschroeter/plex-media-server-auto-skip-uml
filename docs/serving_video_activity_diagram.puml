@@ -1,0 +1,20 @@
+@startuml "Serving video stream"
+
+start
+note left
+    Start serving video stream.
+end note
+
+if (Is auto-skip enabled for client?) then (yes)
+    if (Is auto-skip prompt enabled for client?) then (yes)
+        :Stream video with prompts at auto-skip timestamps;
+    else (no)
+        :Stream video without prompts at auto-skip timestamps;
+    endif
+else (no)
+    :Stream video;
+endif
+
+stop
+
+@enduml
