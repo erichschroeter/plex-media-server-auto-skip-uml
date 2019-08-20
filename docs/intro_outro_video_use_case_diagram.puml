@@ -11,14 +11,14 @@ end note
 
 (Intro starts at 0:00)
 (Intro starts after 0:00)
-(Outro starts at\n<end - X> seconds\nwithout previews after)
-(Outro starts at\n<end - X> seconds\nwith previews after)
+(Outro starts at end\nwithout previews)
+(Outro starts at end\nwith previews)
 (Skippable content\nin middle)
 
 :Video: --> (Intro starts at 0:00)
 :Video: --> (Intro starts after 0:00)
-:Video: --> (Outro starts at\n<end - X> seconds\nwithout previews after)
-:Video: --> (Outro starts at\n<end - X> seconds\nwith previews after)
+:Video: --> (Outro starts at end\nwithout previews)
+:Video: --> (Outro starts at end\nwith previews)
 :Video: --> (Skippable content\nin middle)
 
 @enduml

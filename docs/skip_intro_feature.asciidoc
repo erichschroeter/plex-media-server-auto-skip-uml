@@ -1,7 +1,7 @@
 
-NOTE: This document is meant as a starting point for comprehensively documenting the _"skip intro"_ feature. Feel free to submit pull requests with any additional changes you may have. If a dev who maintains official Plex Media Server source code sees this, feel free to use it or submit your input.
+NOTE: This document is meant as a starting point for comprehensively documenting the _"auto-skip"_ feature. Feel free to submit pull requests with any additional changes you may have. If a dev who maintains official Plex Media Server source code sees this, feel free to use it or submit your input.
 
-Throughout this document the feature of interest will be referred to as _"skip intro"_.
+Throughout this document the feature of interest will be referred to as _"auto-skip"_.
 This feature shall support skipping both intros and outros of TV shows.
 
 It should be assumed that not all TV shows have intros or outros.
@@ -55,8 +55,10 @@ include::outro_starts_at_end_without_previews.puml[]
 include::skippable_content_in_middle.puml[]
 ----
 
+== Client/Server Interaction Use Cases
 
-=== Outro starts at <end - X> without previews after
+The _"auto-skip"_ feature will require interaction between client and server.
+There are several supported clients, some of which may not support the ability to configure preferences, which may make configuring this feature impossible for those clients.
 
 .Client/Server Interaction Use Cases
 [plantuml,align="center"]

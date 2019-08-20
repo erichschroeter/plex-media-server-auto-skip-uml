@@ -1,4 +1,4 @@
-This project exists to flush out a potential feature for skipping intro/outro videos on a [Plex Media Server]().
+This project exists to flush out a potential feature for skipping intro/outro for videos on a [Plex Media Server]().
 
 See [the forum feature suggestion](https://forums.plex.tv/t/tv-series-intro-outro-time-span-definition-and-auto-skip/106802) and vote for it.
 
