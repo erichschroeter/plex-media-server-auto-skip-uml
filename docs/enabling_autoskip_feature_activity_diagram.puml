@@ -1,0 +1,17 @@
+@startuml "Enabling auto-skip feature"
+
+:User navigates to Preferences;
+:User enables auto-skip feature;
+note right
+    There may be several options
+    for the auto-skip feature.
+end note
+:Client sends preference to Server;
+:Server saves preference;
+note right
+    Watching videos will no
+    longer auto-skip or display
+    related interactions on screen.
+end note
+
+@enduml

@@ -47,6 +47,7 @@ include::outro_starts_at_end_with_previews.puml[]
 include::outro_starts_at_end_without_previews.puml[]
 ----
 
+[#skippable-content-in-middle]
 === Skippable content in middle
 
 .Skippable content in middle
@@ -55,7 +56,7 @@ include::outro_starts_at_end_without_previews.puml[]
 include::skippable_content_in_middle.puml[]
 ----
 
-== Client/Server Interaction Use Cases
+== Client/Server Interaction
 
 The _"auto-skip"_ feature will require interaction between client and server.
 There are several supported clients, some of which may not support the ability to configure preferences, which may make configuring this feature impossible for those clients.
@@ -65,3 +66,49 @@ There are several supported clients, some of which may not support the ability t
 ----
 include::skip_intro_use_case_diagram.puml[]
 ----
+
+When a user chooses to enable the _"auto-skip"_ feature, they do so through their client.
+
+.Enabling auto-skip feature
+[plantuml,align="center"]
+----
+include::enabling_autoskip_feature_activity_diagram.puml[]
+----
+
+
+== Metadata
+
+In order for Plex Media Server to know when to skip in videos it needs data to tell it when to skip and how long to skip.
+There are two methods this data can be acquired: _manually_ and _automatically_.
+
+=== Manual metadata
+
+This method is fairly straight forward.
+The user controlling the Plex Media Server can specify a configuration text file in the folder containing any videos that have content they want to _"auto-skip"_.
+
+[#example-config-file]
+==== Example config text file
+
+Below is simply an example of what a config text file _could_ look like.
+
+----
+# An example config text file for auto-skip feature.
+my_awesome_home_video.mkv
+    @04:12,+00:11 # black screen
+    @08:27,+00:05 # black screen
+    @01:03:49,+00:45 # really crappy quality not worth watching
+Your Favorite TV Show/Season 1/S01E01-pilot.mp4
+Your Favorite TV Show/Season 1/S01E02-pilot.mp4
+Your Favorite TV Show/Season 1/S01E03-pilot.mp4
+Your Favorite TV Show/Season 1/S01E04-pilot.mp4
+Your Favorite TV Show/Season 1/S01E05-pilot.mp4
+Your Favorite TV Show/Season 1/S01E06-pilot.mp4
+Your Favorite TV Show/Season 1/S01E07-pilot.mp4
+Your Favorite TV Show/Season 1/S01E08-pilot.mp4
+    @00:00,+00:30
+----
+
+=== Automatic metadata
+
+This method requires more work than the manual method from the developers perspective.
+This method may also be more difficult to implement in use cases like <<skippable-content-in-middle,Skippable content in middle>>.
