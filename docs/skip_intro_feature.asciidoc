@@ -80,6 +80,10 @@ When a user chooses to enable the _"auto-skip"_ feature, they do so through thei
 include::enabling_autoskip_feature_activity_diagram.puml[]
 ----
 
+When the Plex Media Server starts to stream a video and support the _"auto-skip"_ feature there are some things it needs to take into account.
+
+. Does the current client want to auto-skip content at all?
+. Does the current client want to be prompted to auto-skip content?
 
 == Metadata
 

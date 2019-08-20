@@ -31,8 +31,18 @@ end note
 :Windows:
 :Xbox One:
 
-:Plex Media Server: --> (Scanner detects intro/outro text file)
-:Plex Media Server: --> (Scanner detects intro/outro data inside media files)
+:Plex Media Server: --> (Scanner detects auto-skip config text file)
+:Plex Media Server: --> (Scanner detects auto-skip data inside media files)
+note right
+    Certain video container formats
+    may support metadata that could
+    be used for auto-skipping.
+end note
+:Plex Media Server: --> (Scanner detects auto-skip by analyzing multiple files)
+note right
+    Similar to, if not exactly, what
+    the bw_plex Github project does.
+end note
 
 ' (Client enables auto-skip feature)
 :Plex Media Server: --> (Client enables auto-skip feature)
@@ -83,5 +93,55 @@ end note
 :TiVo: --> (Client disables auto-skip feature)
 :Windows: --> (Client disables auto-skip feature)
 :Xbox One: --> (Client disables auto-skip feature)
+
+' (Client enables auto-skip prompt feature)
+:Plex Media Server: --> (Client enables auto-skip prompt feature)
+:Amazon Alexa: --> (Client enables auto-skip prompt feature)
+:Amazon Fire TV: --> (Client enables auto-skip prompt feature)
+:Android: --> (Client enables auto-skip prompt feature)
+:Android Auto: --> (Client enables auto-skip prompt feature)
+:Android TV: --> (Client enables auto-skip prompt feature)
+:Apple TV: --> (Client enables auto-skip prompt feature)
+:Chromecast: --> (Client enables auto-skip prompt feature)
+:Google Daydream: --> (Client enables auto-skip prompt feature)
+:iOS: --> (Client enables auto-skip prompt feature)
+:Kodi: --> (Client enables auto-skip prompt feature)
+:Lenovo Mirage Solo VR: --> (Client enables auto-skip prompt feature)
+:Mac: --> (Client enables auto-skip prompt feature)
+:NVIDIA SHIELD: --> (Client enables auto-skip prompt feature)
+:Oculus Go: --> (Client enables auto-skip prompt feature)
+:PlayStation: --> (Client enables auto-skip prompt feature)
+:Roku: --> (Client enables auto-skip prompt feature)
+:Samsung Gear VR: --> (Client enables auto-skip prompt feature)
+:Smart TVs: --> (Client enables auto-skip prompt feature)
+:Sonos: --> (Client enables auto-skip prompt feature)
+:TiVo: --> (Client enables auto-skip prompt feature)
+:Windows: --> (Client enables auto-skip prompt feature)
+:Xbox One: --> (Client enables auto-skip prompt feature)
+
+' (Client disables auto-skip prompt feature)
+:Plex Media Server: --> (Client disables auto-skip prompt feature)
+:Amazon Alexa: --> (Client disables auto-skip prompt feature)
+:Amazon Fire TV: --> (Client disables auto-skip prompt feature)
+:Android: --> (Client disables auto-skip prompt feature)
+:Android Auto: --> (Client disables auto-skip prompt feature)
+:Android TV: --> (Client disables auto-skip prompt feature)
+:Apple TV: --> (Client disables auto-skip prompt feature)
+:Chromecast: --> (Client disables auto-skip prompt feature)
+:Google Daydream: --> (Client disables auto-skip prompt feature)
+:iOS: --> (Client disables auto-skip prompt feature)
+:Kodi: --> (Client disables auto-skip prompt feature)
+:Lenovo Mirage Solo VR: --> (Client disables auto-skip prompt feature)
+:Mac: --> (Client disables auto-skip prompt feature)
+:NVIDIA SHIELD: --> (Client disables auto-skip prompt feature)
+:Oculus Go: --> (Client disables auto-skip prompt feature)
+:PlayStation: --> (Client disables auto-skip prompt feature)
+:Roku: --> (Client disables auto-skip prompt feature)
+:Samsung Gear VR: --> (Client disables auto-skip prompt feature)
+:Smart TVs: --> (Client disables auto-skip prompt feature)
+:Sonos: --> (Client disables auto-skip prompt feature)
+:TiVo: --> (Client disables auto-skip prompt feature)
+:Windows: --> (Client disables auto-skip prompt feature)
+:Xbox One: --> (Client disables auto-skip prompt feature)
 
 @enduml
