@@ -112,3 +112,5 @@ Your Favorite TV Show/Season 1/S01E08-pilot.mp4
 
 This method requires more work than the manual method from the developers perspective.
 This method may also be more difficult to implement in use cases like <<skippable-content-in-middle,Skippable content in middle>>.
+
+See link:https://github.com/Hellowlol/bw_plex[bw_plex] for a Github project that automatically determines potential skippable content.
