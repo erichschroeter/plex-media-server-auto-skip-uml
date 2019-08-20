@@ -1,0 +1,87 @@
+@startuml
+left to right direction
+
+note as GeneralNote
+    I'm not familiar enough with the project
+    to know if there are protocols that will
+    cover most of these devices.
+end note
+
+:Plex Media Server:
+:Amazon Alexa:
+:Amazon Fire TV:
+:Android:
+:Android Auto:
+:Android TV:
+:Apple TV:
+:Chromecast:
+:Google Daydream:
+:iOS:
+:Kodi:
+:Lenovo Mirage Solo VR:
+:Mac:
+:NVIDIA SHIELD:
+:Oculus Go:
+:PlayStation:
+:Roku:
+:Samsung Gear VR:
+:Smart TVs:
+:Sonos:
+:TiVo:
+:Windows:
+:Xbox One:
+
+:Plex Media Server: --> (Scanner detects intro/outro text file)
+:Plex Media Server: --> (Scanner detects intro/outro data inside media files)
+
+' (Client enables intro/outro skip feature)
+:Plex Media Server: --> (Client enables intro/outro skip feature)
+:Amazon Alexa: --> (Client enables intro/outro skip feature)
+:Amazon Fire TV: --> (Client enables intro/outro skip feature)
+:Android: --> (Client enables intro/outro skip feature)
+:Android Auto: --> (Client enables intro/outro skip feature)
+:Android TV: --> (Client enables intro/outro skip feature)
+:Apple TV: --> (Client enables intro/outro skip feature)
+:Chromecast: --> (Client enables intro/outro skip feature)
+:Google Daydream: --> (Client enables intro/outro skip feature)
+:iOS: --> (Client enables intro/outro skip feature)
+:Kodi: --> (Client enables intro/outro skip feature)
+:Lenovo Mirage Solo VR: --> (Client enables intro/outro skip feature)
+:Mac: --> (Client enables intro/outro skip feature)
+:NVIDIA SHIELD: --> (Client enables intro/outro skip feature)
+:Oculus Go: --> (Client enables intro/outro skip feature)
+:PlayStation: --> (Client enables intro/outro skip feature)
+:Roku: --> (Client enables intro/outro skip feature)
+:Samsung Gear VR: --> (Client enables intro/outro skip feature)
+:Smart TVs: --> (Client enables intro/outro skip feature)
+:Sonos: --> (Client enables intro/outro skip feature)
+:TiVo: --> (Client enables intro/outro skip feature)
+:Windows: --> (Client enables intro/outro skip feature)
+:Xbox One: --> (Client enables intro/outro skip feature)
+
+' (Client disables intro/outro skip feature)
+:Plex Media Server: --> (Client disables intro/outro skip feature)
+:Amazon Alexa: --> (Client disables intro/outro skip feature)
+:Amazon Fire TV: --> (Client disables intro/outro skip feature)
+:Android: --> (Client disables intro/outro skip feature)
+:Android Auto: --> (Client disables intro/outro skip feature)
+:Android TV: --> (Client disables intro/outro skip feature)
+:Apple TV: --> (Client disables intro/outro skip feature)
+:Chromecast: --> (Client disables intro/outro skip feature)
+:Google Daydream: --> (Client disables intro/outro skip feature)
+:iOS: --> (Client disables intro/outro skip feature)
+:Kodi: --> (Client disables intro/outro skip feature)
+:Lenovo Mirage Solo VR: --> (Client disables intro/outro skip feature)
+:Mac: --> (Client disables intro/outro skip feature)
+:NVIDIA SHIELD: --> (Client disables intro/outro skip feature)
+:Oculus Go: --> (Client disables intro/outro skip feature)
+:PlayStation: --> (Client disables intro/outro skip feature)
+:Roku: --> (Client disables intro/outro skip feature)
+:Samsung Gear VR: --> (Client disables intro/outro skip feature)
+:Smart TVs: --> (Client disables intro/outro skip feature)
+:Sonos: --> (Client disables intro/outro skip feature)
+:TiVo: --> (Client disables intro/outro skip feature)
+:Windows: --> (Client disables intro/outro skip feature)
+:Xbox One: --> (Client disables intro/outro skip feature)
+
+@enduml

@@ -1,0 +1,22 @@
+@startuml "Video Intro/Outro Possibilities"
+left to right direction
+
+note as GeneralNote
+    All these scenarios can be generalized
+    by a feature that supports skipping multiple
+    durations of a video.
+end note
+
+:Video:
+
+(Intro starts at 0:00)
+(Intro starts after 0:00)
+(Outro starts at\n<end - X> seconds\nwithout previews after)
+(Outro starts at\n<end - X> seconds\nwith previews after)
+
+:Video: --> (Intro starts at 0:00)
+:Video: --> (Intro starts after 0:00)
+:Video: --> (Outro starts at\n<end - X> seconds\nwithout previews after)
+:Video: --> (Outro starts at\n<end - X> seconds\nwith previews after)
+
+@enduml

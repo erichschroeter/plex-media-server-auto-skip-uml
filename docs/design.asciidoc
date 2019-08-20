@@ -1,0 +1,13 @@
+
+
+.Video Use Cases
+[plantuml,align="center"]
+----
+include::intro_outro_video_use_case_diagram.puml[]
+----
+
+.Client/Server Interaction Use Cases
+[plantuml,align="center"]
+----
+include::skip_intro_use_case_diagram.puml[]
+----
