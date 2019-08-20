@@ -107,19 +107,23 @@ The user controlling the Plex Media Server can specify a configuration text file
 Below is simply an example of what a config text file _could_ look like.
 
 ----
-# An example config text file for auto-skip feature.
+// An example config text file for auto-skip feature.
+// Comments are supported in this example via double '/' character.
 my_awesome_home_video.mkv
-    @04:12,+00:11 # black screen
-    @08:27,+00:05 # black screen
-    @01:03:49,+00:45 # really crappy quality not worth watching
+    @04:12,+00:11 // black screen
+    @08:27,+00:05 // black screen
+    @01:03:49,+00:45 // really crappy quality not worth watching
 Your Favorite TV Show/Season 1/S01E01-pilot.mp4
-Your Favorite TV Show/Season 1/S01E02-pilot.mp4
-Your Favorite TV Show/Season 1/S01E03-pilot.mp4
-Your Favorite TV Show/Season 1/S01E04-pilot.mp4
-Your Favorite TV Show/Season 1/S01E05-pilot.mp4
-Your Favorite TV Show/Season 1/S01E06-pilot.mp4
-Your Favorite TV Show/Season 1/S01E07-pilot.mp4
-Your Favorite TV Show/Season 1/S01E08-pilot.mp4
+Your Favorite TV Show/Season 1/S01E02-example-title.mp4
+Your Favorite TV Show/Season 1/S01E03-example-title.mp4
+Your Favorite TV Show/Season 1/S01E04-example-title.mp4
+Your Favorite TV Show/Season 1/S01E05-example-title.mp4
+Your Favorite TV Show/Season 1/S01E06-example-title.mp4
+Your Favorite TV Show/Season 1/S01E07-example-title.mp4
+Your Favorite TV Show/Season 1/S01E08-example-title.mp4
+    @00:00,+00:30
+// Globs are supported in this example.
+Your Favorite TV Show/Season 2/S02E*.mp4
     @00:00,+00:30
 ----
 
