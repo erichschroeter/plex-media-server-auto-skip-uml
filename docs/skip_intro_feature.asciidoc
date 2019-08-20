@@ -17,7 +17,7 @@ Such a case may be a home video recorded decades ago on https://en.wikipedia.org
 .Video Use Cases
 [plantuml,align="center"]
 ----
-include::intro_outro_video_use_case_diagram.puml[]
+include::autoskip_feature_use_case_diagram.puml[]
 ----
 
 === Intro starts at 00:00
