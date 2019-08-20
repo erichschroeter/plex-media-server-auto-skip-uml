@@ -1,0 +1,12 @@
+@startuml "Outro starts at end with previews"
+Title Outro starts at end with previews
+footer Time values should only be viewed as examples
+concise "Video" as Video
+
+@Video
+0 is Content
++90 is Outro
++5 is Content
+@100
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml "Skippable content in middle"
+Title Skippable content in middle
+footer Time values should only be viewed as examples
+caption e.g. a home video shot on VHS with blank video between shots.
+concise "Video" as Video
+
+@Video
+0 is Content
++40 is Skip
++5 is Content
++20 is Skip
++5 is Content
+@100
+
+@enduml

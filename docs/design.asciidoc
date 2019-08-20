@@ -1,10 +1,62 @@
 
+NOTE: This document is meant as a starting point for comprehensively documenting the _"skip intro"_ feature. Feel free to submit pull requests with any additional changes you may have. If a dev who maintains official Plex Media Server source code sees this, feel free to use it or submit your input.
+
+Throughout this document the feature of interest will be referred to as _"skip intro"_.
+This feature shall support skipping both intros and outros of TV shows.
+
+It should be assumed that not all TV shows have intros or outros.
+Furthermore, TV shows that do have intros or outros do not follow the same convention for where an intro or outro is located within a video or TV series.
+
+== Video Intro and Outro Conventions
 
 .Video Use Cases
 [plantuml,align="center"]
 ----
 include::intro_outro_video_use_case_diagram.puml[]
 ----
+
+=== Intro starts at 00:00
+
+.Intro starts at 00:00
+[plantuml,align="center"]
+----
+include::intro_starts_at_00_00.puml[]
+----
+
+=== Intro starts after 00:00
+
+.Intro starts after 00:00
+[plantuml,align="center"]
+----
+include::intro_starts_after_00_00.puml[]
+----
+
+=== Outro starts at end with previews
+
+.Outro starts at end with previews
+[plantuml,align="center"]
+----
+include::outro_starts_at_end_with_previews.puml[]
+----
+
+=== Outro starts at end without previews
+
+.Outro starts at end without previews
+[plantuml,align="center"]
+----
+include::outro_starts_at_end_without_previews.puml[]
+----
+
+=== Skippable content in middle
+
+.Skippable content in middle
+[plantuml,align="center"]
+----
+include::skippable_content_in_middle.puml[]
+----
+
+
+=== Outro starts at <end - X> without previews after
 
 .Client/Server Interaction Use Cases
 [plantuml,align="center"]

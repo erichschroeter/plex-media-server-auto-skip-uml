@@ -1,0 +1,12 @@
+@startuml "Intro starts after 00:00"
+Title Intro starts after 00:00
+footer Time values should only be viewed as examples
+concise "Video" as Video
+
+@Video
+0 is Content
++10 is Intro
++5 is Content
+@100
+
+@enduml
