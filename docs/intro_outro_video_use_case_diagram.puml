@@ -4,7 +4,7 @@ left to right direction
 note as GeneralNote
     All these scenarios can be generalized
     by a feature that supports skipping multiple
-    durations of a video.
+    durations within a video.
 end note
 
 :Video:
