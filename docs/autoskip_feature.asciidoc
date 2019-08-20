@@ -69,7 +69,7 @@ There are several supported clients, some of which may not support the ability t
 .Client/Server Interaction Use Cases
 [plantuml,align="center"]
 ----
-include::skip_intro_use_case_diagram.puml[]
+include::autoskip_client_server_use_case_diagram.puml[]
 ----
 
 When a user chooses to enable the _"auto-skip"_ feature, they do so through their client.
